@@ -9,6 +9,7 @@
           <p class="icon-desc">{{item.desc}}</p>
         </div>
       </swiper-slide>
+      <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
   </div>
 </template>
@@ -46,9 +47,16 @@ export default {
   @import '~styles/mixins.styl'
   .icons >>> .swiper-container
     height: 0
-    padding-bottom: 50%
+    padding-bottom: 53%
+  .icons >>> .swiper-pagination-bullet-active
+    background: rgba(0,175,190,.8)
+  .icons >>> .swiper-pagination-bullets
+    bottom: 0
+  .icons >>> .swiper-pagination-bullet
+    width: .12rem;
+    height: .12rem;
   .icons
-    margin-top: .1rem
+    margin: .1rem 0 .2rem 0
     .icon
       position: relative
       overflow: hidden

@@ -87,8 +87,8 @@ export default {
       box-sizing: border-box
       width: 100%
       height: .62rem
-      padding: 0 .1rem
-      line-height: .62rem
+      line-height: .4rem
+      padding: 0 0.1rem
       text-align: center;
       border-radius: .06rem
       color: #666
