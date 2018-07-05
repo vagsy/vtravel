@@ -1,6 +1,4 @@
 {
-	"ret": true,
-	"data":{
 		"hotCities": [{
 			"id": 1,
 			"spell": "beijing",
@@ -3863,4 +3861,3 @@
 			}]
 		}
 	}
-}
