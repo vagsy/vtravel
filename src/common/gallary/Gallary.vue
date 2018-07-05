@@ -41,6 +41,11 @@ export default {
 <style lang="stylus" scoped>
   .container >>> .swiper-container
     overflow: inherit
+  .container >>> .swiper-slide
+    height: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   .container
     display: flex
     flex-direction: column
