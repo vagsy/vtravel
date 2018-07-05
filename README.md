@@ -10,11 +10,11 @@ npm install
 
 # serve with hot reload at localhost:8080
 
-> 前端启动 npm run dev
+前端启动 npm run dev
 
-> 后端启动
->> cd server
->> npm run start
+后端启动
+cd server
+npm run start
 
 # build for production with minification
 npm run build
