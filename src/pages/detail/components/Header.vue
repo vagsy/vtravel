@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     handleScroll () {
-      let top = document.documentElement.scrollTop
+      let top = document.documentElement.scrollTop || document.body.scrollTop
       if (top > 60) {
         let opacity = top / 140
         opacity = opacity > 1 ? 1 : opacity
@@ -39,10 +39,16 @@ export default {
       }
     }
   },
-  activated () {
+  // activated () { // 开启keep-alive时使用
+  //   window.addEventListener('scroll', this.handleScroll)
+  // },
+  // deactivated () { // 开启keep-alive时使用
+  //   window.removeEventListener('scroll', this.handleScroll)
+  // },
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
