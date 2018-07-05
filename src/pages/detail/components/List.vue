@@ -34,7 +34,7 @@ export default {
       height: .36rem
       background: url('./detail.png') no-repeat  0 -.44rem
       position: relative
-      top: .05rem
+      top: .06rem
       margin-right: .1rem
       background-size: .4rem 3rem
   .item-children
