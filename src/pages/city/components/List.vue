@@ -58,8 +58,16 @@ export default {
     },
     ...mapMutations(['changeCity'])
   },
-  mounted () {
-    this.scroll = new Bscroll(this.$refs.wrapper)
+  activated () {
+    this.$nextTick(() => {
+      if (!this.scroll) {
+        this.scroll = new Bscroll(this.$refs.wrapper, {
+          click: true
+        })
+      } else {
+        this.scroll.refresh()
+      }
+    })
   },
   watch: {
     letter () {
